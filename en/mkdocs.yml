@@ -552,6 +552,7 @@ nav:
                         - Retry failed messages with a delay: integrate/examples/rabbitmq_examples/retry-delay-failed-msgs-rabbitmq.md
                         - Requeue a message preserving the order: integrate/examples/rabbitmq_examples/requeue-msgs-with-errors-rabbitmq.md
                         - Publish messages to DLX: integrate/examples/rabbitmq_examples/move-msgs-to-dlq-rabbitmq.md
+                        - How to Manage Guaranteed Delivery with Non Blocking Client Acknowledgement: integrate/examples/rabbitmq_examples/rabbitmq-nonblocking-client-ack.md
                     - Dual Channel: integrate/examples/rabbitmq_examples/request-response-rabbitmq.md
                 - JMS Examples:
                     - Consume JMS Messages: integrate/examples/jms_examples/consuming-jms.md
