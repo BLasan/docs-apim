@@ -942,7 +942,7 @@ claims_extractor_impl = "org.wso2.carbon.apimgt.impl.token.DefaultClaimsRetrieve
                                 </div>
                             </div><div class="param">
                                 <div class="param-name">
-                                  <span class="param-name-wrap"> <code>gateway_generator.enable_claim_retrieval</code> </span>
+                                  <span class="param-name-wrap"> <code>enable_claim_retrieval</code> </span>
                                 </div>
                                 <div class="param-info">
                                     <div>
@@ -2729,8 +2729,7 @@ password = "$ref{super_admin.password}"
 pool.init_idle_capacity = 50
 pool.max_idle = 100
 key_validation_handler_type = "custom"
-key_validation_handler_impl = "org.wso2.carbon.apimgt.keymgt.handlers.DefaultKeyValidationHandler"
-enable_application_scopes_for_resident_km = false</code></pre>
+key_validation_handler_impl = "org.wso2.carbon.apimgt.keymgt.handlers.DefaultKeyValidationHandler"</code></pre>
                     </div>
                 </div>
                 <div class="doc-wrapper">
@@ -15967,7 +15966,7 @@ class="org.wso2.carbon.apimgt.gateway.handlers.custom.customer_handler"
 
 
 
-## APIM Governance Configurations
+## Proxy Configurations
 
 
 <div class="mb-config-catalog">
@@ -15977,6 +15976,162 @@ class="org.wso2.carbon.apimgt.gateway.handlers.custom.customer_handler"
             
             <input name="103" type="checkbox" id="_tab_103">
                 <label class="tab-selector" for="_tab_103"><i class="icon fa fa-code"></i></label>
+                <div class="superfences-content">
+                    <div class="mb-config-example">
+<pre><code class="toml">[apim.proxy_config]
+enable = true
+host =  "hello.xyz.org" 
+port = "80"
+targetProxyHosts = "localhost|abc.com"
+protocol = "HTTP" 
+</code></pre>
+                    </div>
+                </div>
+                <div class="doc-wrapper">
+                    <div class="mb-config">
+                        <div class="config-wrap">
+                            <code>[apim.proxy_config]</code>
+                            
+                            <p>
+                                configuration used to define or enable disable proxy configurations.
+                            </p>
+                        </div>
+                        <div class="params-wrap">
+                            <div class="param">
+                                <div class="param-name">
+                                  <span class="param-name-wrap"> <code>enable</code> </span>
+                                </div>
+                                <div class="param-info">
+                                    <div>
+                                        <p>
+                                            <span class="param-type string"> boolean </span>
+                                            <span class="badge-required">Required</span>
+                                        </p>
+                                        <div class="param-default">
+                                            <span class="param-default-value">Default: <code></code></span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="param-description">
+                                        <p>Enable or disable a defined proxy configuration.</p>
+                                    </div>
+                                </div>
+                            </div><div class="param">
+                                <div class="param-name">
+                                  <span class="param-name-wrap"> <code>host</code> </span>
+                                </div>
+                                <div class="param-info">
+                                    <div>
+                                        <p>
+                                            <span class="param-type string"> string </span>
+                                            <span class="badge-required">Required</span>
+                                        </p>
+                                        <div class="param-default">
+                                            <span class="param-default-value">Default: <code></code></span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="param-description">
+                                        <p>Fully qualified domain name of the proxy server.</p>
+                                    </div>
+                                </div>
+                            </div><div class="param">
+                                <div class="param-name">
+                                  <span class="param-name-wrap"> <code>port</code> </span>
+                                </div>
+                                <div class="param-info">
+                                    <div>
+                                        <p>
+                                            <span class="param-type string"> int </span>
+                                            <span class="badge-required">Required</span>
+                                        </p>
+                                        <div class="param-default">
+                                            <span class="param-default-value">Default: <code></code></span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="param-description">
+                                        <p>Port number of the proxy server.</p>
+                                    </div>
+                                </div>
+                            </div><div class="param">
+                                <div class="param-name">
+                                  <span class="param-name-wrap"> <code>protocol</code> </span>
+                                </div>
+                                <div class="param-info">
+                                    <div>
+                                        <p>
+                                            <span class="param-type string"> string </span>
+                                            
+                                        </p>
+                                        <div class="param-default">
+                                            <span class="param-default-value">Default: <code></code></span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="param-description">
+                                        <p>Protocol used by the proxy server (e.g., HTTP, HTTPS).</p>
+                                    </div>
+                                </div>
+                            </div><div class="param">
+                                <div class="param-name">
+                                  <span class="param-name-wrap"> <code>nonProxyHosts</code> </span>
+                                </div>
+                                <div class="param-info">
+                                    <div>
+                                        <p>
+                                            <span class="param-type string"> string </span>
+                                            
+                                        </p>
+                                        <div class="param-default">
+                                            <span class="param-default-value">Default: <code></code></span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="param-description">
+                                        <p>List of hosts separated by &#39;|&#39; that should bypass the proxy server.</p>
+                                    </div>
+                                </div>
+                            </div><div class="param">
+                                <div class="param-name">
+                                  <span class="param-name-wrap"> <code>targetProxyHosts</code> </span>
+                                </div>
+                                <div class="param-info">
+                                    <div>
+                                        <p>
+                                            <span class="param-type string"> string </span>
+                                            
+                                        </p>
+                                        <div class="param-default">
+                                            <span class="param-default-value">Default: <code></code></span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="param-description">
+                                        <p>List of hosts separated by &#39;|&#39; that should use the proxy server.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+## APIM Governance Configurations
+
+
+<div class="mb-config-catalog">
+    <section>
+        <div class="mb-config-options">
+            <div class="superfences-tabs">
+            
+            <input name="104" type="checkbox" id="_tab_104">
+                <label class="tab-selector" for="_tab_104"><i class="icon fa fa-code"></i></label>
                 <div class="superfences-content">
                     <div class="mb-config-example">
 <pre><code class="toml">[apim.governance.scheduler]
@@ -16092,8 +16247,8 @@ task_cleanup_interval_minutes = 30
         <div class="mb-config-options">
             <div class="superfences-tabs">
             
-            <input name="104" type="checkbox" id="_tab_104">
-                <label class="tab-selector" for="_tab_104"><i class="icon fa fa-code"></i></label>
+            <input name="105" type="checkbox" id="_tab_105">
+                <label class="tab-selector" for="_tab_105"><i class="icon fa fa-code"></i></label>
                 <div class="superfences-content">
                     <div class="mb-config-example">
 <pre><code class="toml">[apim.organization_based_access_control]
@@ -16188,8 +16343,8 @@ organization_id_local_claim = "http://wso2.org/claims/organizationId"</code></pr
         <div class="mb-config-options">
             <div class="superfences-tabs">
             
-            <input name="105" type="checkbox" id="_tab_105">
-                <label class="tab-selector" for="_tab_105"><i class="icon fa fa-code"></i></label>
+            <input name="106" type="checkbox" id="_tab_106">
+                <label class="tab-selector" for="_tab_106"><i class="icon fa fa-code"></i></label>
                 <div class="superfences-content">
                     <div class="mb-config-example">
 <pre><code class="toml">[service_provider]
@@ -16245,8 +16400,8 @@ use_username_as_sub_claim = true
         <div class="mb-config-options">
             <div class="superfences-tabs">
             
-            <input name="106" type="checkbox" id="_tab_106">
-                <label class="tab-selector" for="_tab_106"><i class="icon fa fa-code"></i></label>
+            <input name="107" type="checkbox" id="_tab_107">
+                <label class="tab-selector" for="_tab_107"><i class="icon fa fa-code"></i></label>
                 <div class="superfences-content">
                     <div class="mb-config-example">
 <pre><code class="toml">[apim.basic_authenticator]
@@ -16362,8 +16517,8 @@ max_wait_millis = 30000
         <div class="mb-config-options">
             <div class="superfences-tabs">
             
-            <input name="107" type="checkbox" id="_tab_107">
-                <label class="tab-selector" for="_tab_107"><i class="icon fa fa-code"></i></label>
+            <input name="108" type="checkbox" id="_tab_108">
+                <label class="tab-selector" for="_tab_108"><i class="icon fa fa-code"></i></label>
                 <div class="superfences-content">
                     <div class="mb-config-example">
 <pre><code class="toml">[web_app.cookie_processor]
@@ -16420,9 +16575,9 @@ same_site_cookies = "lax"
     <section>
         <div class="mb-config-options">
             <div class="superfences-tabs">
-
-            <input name="108" type="checkbox" id="_tab_108">
-                <label class="tab-selector" for="_tab_108"><i class="icon fa fa-code"></i></label>
+            
+            <input name="109" type="checkbox" id="_tab_109">
+                <label class="tab-selector" for="_tab_109"><i class="icon fa fa-code"></i></label>
                 <div class="superfences-content">
                     <div class="mb-config-example">
 <pre><code class="toml">[apim.aws_lambda.http_client]
@@ -16459,7 +16614,7 @@ connection_acquisition_timeout = 60
                                         
                                     </div>
                                     <div class="param-description">
-                                        <p>The maximum number of concurrent HTTP connections allowed per API resource. Increase this value if you expect high concurrent throughput to Lambda functions.</p>
+                                        <p>The maximum number of concurrent HTTP connections allowed per AWS Lambda client instance. Increase this value if you expect high concurrent throughput to Lambda functions.</p>
                                     </div>
                                 </div>
                             </div><div class="param">
@@ -16527,4 +16682,3 @@ connection_acquisition_timeout = 60
         </div>
     </section>
 </div>
-
