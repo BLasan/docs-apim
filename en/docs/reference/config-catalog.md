@@ -285,7 +285,26 @@ wsdl=15
                                         
                                     </div>
                                     <div class="param-description">
-                                        <p>Maximum file size limit for importing WSDL definitions via URL.</p>
+                                        <p>Maximum file size limit for importing WSDL API definitions via URL.</p>
+                                    </div>
+                                </div>
+                            </div><div class="param">
+                                <div class="param-name">
+                                  <span class="param-name-wrap"> <code>aysnc</code> </span>
+                                </div>
+                                <div class="param-info">
+                                    <div>
+                                        <p>
+                                            <span class="param-type string"> integer </span>
+                                            
+                                        </p>
+                                        <div class="param-default">
+                                            <span class="param-default-value">Default: <code>10</code></span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="param-description">
+                                        <p>Maximum file size limit for importing Async API definitions via URL.</p>
                                     </div>
                                 </div>
                             </div>

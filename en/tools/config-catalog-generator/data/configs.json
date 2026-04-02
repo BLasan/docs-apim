@@ -91,7 +91,15 @@
                             "required": false,
                             "default": "10",
                             "possible": "",
-                            "description": "Maximum file size limit for importing WSDL definitions via URL."
+                            "description": "Maximum file size limit for importing WSDL API definitions via URL."
+                        },
+                        {
+                            "name": "aysnc",
+                            "type": "integer",
+                            "required": false,
+                            "default": "10",
+                            "possible": "",
+                            "description": "Maximum file size limit for importing Async API definitions via URL."
                         }
                     ]
                 }
