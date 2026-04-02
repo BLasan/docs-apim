@@ -1,0 +1,4 @@
+[apim.publisher.import_definiton_file_size_limit]
+oas=10
+async=20
+wsdl=15
