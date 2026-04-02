@@ -69,6 +69,35 @@
             ],
             "exampleFile": "server.toml"
         },    
+    {
+            "title": "Import API Definition File Size Limit",
+            "options": [
+                {
+                    "name": "apim.publisher.import_definition_file_size_limit",
+                    "required": false,
+                    "description": "Configuration used to define the maximum file size limit for importing API definitions via URL.",
+                    "params": [
+                        {
+                            "name": "oas",
+                            "type": "integer",
+                            "required": false,
+                            "default": "10",
+                            "possible": "",
+                            "description": "Maximum file size limit for importing OAS API definitions via URL."
+                        },
+                        {
+                            "name": "wsdl",
+                            "type": "integer",
+                            "required": false,
+                            "default": "10",
+                            "possible": "",
+                            "description": "Maximum file size limit for importing WSDL definitions via URL."
+                        }
+                    ]
+                }
+            ],
+            "exampleFile": "import_definition_file_size_limit.toml"
+        },
         {
             "title": "Super admin configurations",
             "options": [
