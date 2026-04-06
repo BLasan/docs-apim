@@ -248,7 +248,7 @@ protocol = "HTTP"
                             <code>[apim.proxy_config]</code>
                             
                             <p>
-                                configuration used to enable or disable proxy configurations. Note that targetProxyHosts configuration only availalbe from U2 update level 55 onwards.
+                                Configuration used to enable or disable proxy configurations. Note that targetProxyHosts configuration is only available from U2 update level 55 onwards.
                             </p>
                         </div>
                         <div class="params-wrap">
