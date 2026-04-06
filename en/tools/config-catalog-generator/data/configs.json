@@ -69,13 +69,13 @@
             ],
             "exampleFile": "server.toml"
         },
-       {
+        {
             "title": "Proxy Configurations",
             "options": [
                 {
                     "name": "apim.proxy_config",
                     "required": false,
-                    "description": "configuration used to define or enable disable proxy configurations. Note that targetProxyHosts configuration only availalbe from U2 update level 55 onwards.",
+                    "description": "configuration used to enable or disable proxy configurations. Note that targetProxyHosts configuration only availalbe from U2 update level 55 onwards.",
                     "params": [
                         {
                             "name": "enable",
