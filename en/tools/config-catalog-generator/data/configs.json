@@ -304,7 +304,6 @@
                             "default": "",
                             "possible": "",
                             "description": "Protocol used by the proxy server (e.g., HTTP, HTTPS)."
-
                         },
                         {
                             "name": "nonProxyHosts",
@@ -313,7 +312,6 @@
                             "default": "",
                             "possible": "",
                             "description": "List of hosts separated by '|' that should bypass the proxy server."
-
                         },
                         {
                             "name": "targetProxyHosts",
@@ -322,7 +320,6 @@
                             "default": "",
                             "possible": "",
                             "description": "List of hosts separated by '|' that should use the proxy server."
-
                         }
                     ]
                 }
