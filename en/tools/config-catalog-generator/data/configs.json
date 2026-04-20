@@ -248,7 +248,7 @@
                     ]
                 }
             ],
-            "exampleFile": "database_shared_db.toml"
+            "exampleFile": "file_size_limit.toml"
         },
         {
             "title": "Shared database configurations",
@@ -290,7 +290,7 @@
                     ]
                 }
             ],
-            "exampleFile": "file_size_limit.toml"
+            "exampleFile": "database_shared_db.toml"
         },
         {
             "title": "JWT Configurations",
