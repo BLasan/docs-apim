@@ -70,42 +70,39 @@
             "exampleFile": "server.toml"
         },   
         {
-            "title": "Import API Definition File Size Limit",
+            "title": "URL based File Size Limit Configuration for APIs",
             "options": [
                 {
                     "name": "apim.publisher.import_definition_file_size_limit",
                     "required": false,
-                    "description": "Configuration used to define the maximum file size limit for importing API definitions via URL.",
+                    "description": "Configurations related to the file size limit for API creation & update via URL. Note that this configuration is available from U2 level 110",
                     "params": [
                         {
                             "name": "oas",
-                            "type": "integer",
+                            "type": "int",
                             "required": false,
-                            "default": "10",
-                            "possible": "",
-                            "description": "Maximum file size limit for importing OAS API definitions via URL."
+                            "default": 10,
+                            "description": "File size limit in megabytes"
                         },
                         {
                             "name": "wsdl",
-                            "type": "integer",
+                            "type": "int",
                             "required": false,
-                            "default": "10",
-                            "possible": "",
-                            "description": "Maximum file size limit for importing WSDL API definitions via URL."
+                            "default": 10,
+                            "description": "File size limit in megabytes"
                         },
                         {
                             "name": "async",
-                            "type": "integer",
+                            "type": "int",
                             "required": false,
-                            "default": "10",
-                            "possible": "",
-                            "description": "Maximum file size limit for importing Async API definitions via URL."
+                            "default": 10,
+                            "description": "File size limit in megabytes"
                         }
                     ]
                 }
             ],
-            "exampleFile": "import_definition_file_size_limit.toml"
-        }, 
+            "exampleFile": "file_size_limit.toml"
+        },
         {
             "title": "Super admin configurations",
             "options": [

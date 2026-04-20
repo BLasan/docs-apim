@@ -221,7 +221,7 @@ disable_restart_from_ui = false</code></pre>
 
 
 
-## Import API Definition File Size Limit
+## URL based File Size Limit Configuration for APIs
 
 
 <div class="mb-config-catalog">
@@ -246,7 +246,7 @@ wsdl=15
                             <code>[apim.publisher.import_definition_file_size_limit]</code>
                             
                             <p>
-                                Configuration used to define the maximum file size limit for importing API definitions via URL.
+                                Configurations related to the file size limit for API creation & update via URL. Note that this configuration is available from U2 level 110
                             </p>
                         </div>
                         <div class="params-wrap">
@@ -257,7 +257,7 @@ wsdl=15
                                 <div class="param-info">
                                     <div>
                                         <p>
-                                            <span class="param-type string"> integer </span>
+                                            <span class="param-type string"> int </span>
                                             
                                         </p>
                                         <div class="param-default">
@@ -266,7 +266,7 @@ wsdl=15
                                         
                                     </div>
                                     <div class="param-description">
-                                        <p>Maximum file size limit for importing OAS API definitions via URL.</p>
+                                        <p>File size limit in megabytes</p>
                                     </div>
                                 </div>
                             </div><div class="param">
@@ -276,7 +276,7 @@ wsdl=15
                                 <div class="param-info">
                                     <div>
                                         <p>
-                                            <span class="param-type string"> integer </span>
+                                            <span class="param-type string"> int </span>
                                             
                                         </p>
                                         <div class="param-default">
@@ -285,7 +285,7 @@ wsdl=15
                                         
                                     </div>
                                     <div class="param-description">
-                                        <p>Maximum file size limit for importing WSDL API definitions via URL.</p>
+                                        <p>File size limit in megabytes</p>
                                     </div>
                                 </div>
                             </div><div class="param">
@@ -295,7 +295,7 @@ wsdl=15
                                 <div class="param-info">
                                     <div>
                                         <p>
-                                            <span class="param-type string"> integer </span>
+                                            <span class="param-type string"> int </span>
                                             
                                         </p>
                                         <div class="param-default">
@@ -304,7 +304,7 @@ wsdl=15
                                         
                                     </div>
                                     <div class="param-description">
-                                        <p>Maximum file size limit for importing Async API definitions via URL.</p>
+                                        <p>File size limit in megabytes</p>
                                     </div>
                                 </div>
                             </div>
