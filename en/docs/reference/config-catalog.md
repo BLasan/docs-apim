@@ -673,7 +673,7 @@ wsdl=20
                             <code>[apim.publisher.import_definition_file_size_limit]</code>
                             
                             <p>
-                                Configurations related to the file size limit for API creation & update via URL. Note that this configuration is available from U2 level 199
+                                Configurations related to the file size limit for API creation & update via URL. Note that this configuration is available from U2 level 110
                             </p>
                         </div>
                         <div class="params-wrap">

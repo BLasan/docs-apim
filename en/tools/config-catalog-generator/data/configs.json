@@ -229,7 +229,7 @@
                 {
                     "name": "apim.publisher.import_definition_file_size_limit",
                     "required": false,
-                    "description": "Configurations related to the file size limit for API creation & update via URL. Note that this configuration is available from U2 level 199",
+                    "description": "Configurations related to the file size limit for API creation & update via URL. Note that this configuration is available from U2 level 110",
                     "params": [
                         {
                             "name": "oas",
