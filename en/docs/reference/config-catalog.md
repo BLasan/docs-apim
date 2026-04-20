@@ -663,7 +663,8 @@ password = "wso2carbon"</code></pre>
                     <div class="mb-config-example">
 <pre><code class="toml">[apim.publisher.import_definition_file_size_limit]
 oas=20
-wsdl=20</code></pre>
+wsdl=20
+</code></pre>
                     </div>
                 </div>
                 <div class="doc-wrapper">
@@ -672,7 +673,7 @@ wsdl=20</code></pre>
                             <code>[apim.publisher.import_definition_file_size_limit]</code>
                             
                             <p>
-                                Configurations related to the file size limit for API creation & update via URL
+                                Configurations related to the file size limit for API creation & update via URL. Note this update is available from U2 level 474 onwards.
                             </p>
                         </div>
                         <div class="params-wrap">
