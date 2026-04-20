@@ -739,11 +739,9 @@ password = "wso2carbon"</code></pre>
                 <label class="tab-selector" for="_tab_7"><i class="icon fa fa-code"></i></label>
                 <div class="superfences-content">
                     <div class="mb-config-example">
-<pre><code class="toml">[database.shared_db]
-type = "h2"
-url = "jdbc:h2:./repository/database/WSO2SHARED_DB;DB_CLOSE_ON_EXIT=FALSE"
-username = "wso2carbon"
-password = "wso2carbon"</code></pre>
+<pre><code class="toml">[apim.publisher.import_definition_file_size_limit]
+oas=20
+wsdl=20</code></pre>
                     </div>
                 </div>
                 <div class="doc-wrapper">

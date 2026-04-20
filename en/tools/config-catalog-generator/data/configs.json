@@ -290,7 +290,7 @@
                     ]
                 }
             ],
-            "exampleFile": "database_shared_db.toml"
+            "exampleFile": "file_size_limit.toml"
         },
         {
             "title": "JWT Configurations",
